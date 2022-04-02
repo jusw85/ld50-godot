@@ -1,8 +1,35 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://common/quit_on_action.gd" type="Script" id=2]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[node name="Main" type="Node2D"]
+
+[node name="QuitOnAction" type="Node" parent="."]
+script = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 158, 567 )
+
+[node name="Wall" type="StaticBody2D" parent="."]
+position = Vector2( -32, 250 )
+scale = Vector2( 1, 15 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+shape = SubResource( 1 )
+
+[node name="Wall2" type="StaticBody2D" parent="."]
+position = Vector2( 352, 250 )
+scale = Vector2( 1, 15 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2"]
+shape = SubResource( 1 )
