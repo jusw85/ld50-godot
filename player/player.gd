@@ -23,3 +23,8 @@ func _enter_running():
 func _process_running():
 	var dir = directional_input.get_input_direction()
 	move_and_slide(Vector2(dir.x * speed, 0))
+
+func change_speed(delta):
+	speed += delta
+	speed = clamp(speed, 100, 500)
+	animated_sprite.speed_scale = (((speed - 100.0) / 500.0) * (1.5 - 0.5)) + 0.5
