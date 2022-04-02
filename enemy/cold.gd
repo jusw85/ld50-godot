@@ -11,5 +11,5 @@ func _process(_delta) -> void:
 	position.y += speed * _delta
 
 
-func _on_Hot_body_entered(body):
-	print("body entered")
+func _on_Cold_body_entered(body):
+	print("area entered")

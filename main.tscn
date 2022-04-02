@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=2]
 [ext_resource path="res://enemy/hot.tscn" type="PackedScene" id=3]
+[ext_resource path="res://enemy/cold.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 32 )
@@ -38,3 +39,15 @@ shape = SubResource( 1 )
 
 [node name="Hot" parent="." instance=ExtResource( 3 )]
 position = Vector2( 151, 17 )
+
+[node name="Hot2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 222, -416 )
+
+[node name="Hot3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 98, -295 )
+
+[node name="Cold" parent="." instance=ExtResource( 4 )]
+position = Vector2( 256, -165 )
+
+[node name="Cold2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 117, -125 )
