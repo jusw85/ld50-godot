@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://player/player.gd" type="Script" id=1]
-[ext_resource path="res://player/running_4.png" type="Texture" id=2]
+[ext_resource path="res://player/assets/running_4.png" type="Texture" id=2]
 [ext_resource path="res://common/directional_input.gd" type="Script" id=3]
-[ext_resource path="res://player/running_1.png" type="Texture" id=4]
-[ext_resource path="res://player/running_5.png" type="Texture" id=5]
-[ext_resource path="res://player/running_3.png" type="Texture" id=6]
-[ext_resource path="res://player/running_6.png" type="Texture" id=7]
-[ext_resource path="res://player/running_2.png" type="Texture" id=8]
+[ext_resource path="res://player/assets/running_1.png" type="Texture" id=4]
+[ext_resource path="res://player/assets/running_5.png" type="Texture" id=5]
+[ext_resource path="res://player/assets/running_3.png" type="Texture" id=6]
+[ext_resource path="res://player/assets/running_6.png" type="Texture" id=7]
+[ext_resource path="res://player/assets/running_2.png" type="Texture" id=8]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -30,7 +30,6 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

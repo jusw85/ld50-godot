@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/running_1.png-9608aa6b47c988b74b907b7026397d2b.stex"
+path="res://.import/ugly_1.png-becdd037e0e5be69e7171cb1a7a339f7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/running_1.png"
-dest_files=[ "res://.import/running_1.png-9608aa6b47c988b74b907b7026397d2b.stex" ]
+source_file="res://enemy/assets/ugly_1.png"
+dest_files=[ "res://.import/ugly_1.png-becdd037e0e5be69e7171cb1a7a339f7.stex" ]
 
 [params]
 
