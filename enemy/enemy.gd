@@ -1,7 +1,7 @@
 extends Area2D
 
+export var speed_delta = 50
 var player
-
 
 func _ready():
 	pass
@@ -16,6 +16,6 @@ func _process(_delta) -> void:
 		position.y += player.speed * _delta
 
 
-func _on_Cold_body_entered(body):
-	body.change_speed(-50)
+func _on_body_entered(body):
+	body.change_speed(speed_delta)
 	queue_free()

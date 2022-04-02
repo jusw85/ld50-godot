@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://enemy/cold.gd" type="Script" id=1]
+[ext_resource path="res://enemy/enemy.gd" type="Script" id=1]
 [ext_resource path="res://enemy/cold.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -8,6 +8,7 @@ extents = Vector2( 32, 32 )
 
 [node name="Cold" type="Area2D" groups=["enemy"]]
 script = ExtResource( 1 )
+speed_delta = -50
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
@@ -15,4 +16,4 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[connection signal="body_entered" from="." to="." method="_on_Cold_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
