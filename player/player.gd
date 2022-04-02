@@ -7,6 +7,7 @@ export var speed := 300.0
 var _fsm: NC.StateMachine
 
 onready var directional_input: NC.DirectionalInput = $DirectionalInput
+onready var animated_sprite = $AnimatedSprite
 
 func _ready():
 	_fsm = NC.StateMachine.new()
