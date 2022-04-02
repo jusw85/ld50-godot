@@ -12,4 +12,8 @@ func _process(_delta) -> void:
 
 
 func _on_Hot_body_entered(body):
-	print("body entered")
+	var enemies = get_tree().get_nodes_in_group("enemy")
+	for enemy in enemies:
+		enemy.speed += 50
+		enemy.speed = clamp(enemy.speed, 100, 500)
+	queue_free()
