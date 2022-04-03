@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tunnel_end.png-d9f5e1c276d5f96a4b4559f761397c65.stex"
+path="res://.import/wall_right.png-972d9a3c1b816986507b1d61ea68ed37.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tunnel_end.png"
-dest_files=[ "res://.import/tunnel_end.png-d9f5e1c276d5f96a4b4559f761397c65.stex" ]
+source_file="res://background/assets/wall_right.png"
+dest_files=[ "res://.import/wall_right.png-972d9a3c1b816986507b1d61ea68ed37.stex" ]
 
 [params]
 
