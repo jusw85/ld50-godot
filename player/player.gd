@@ -23,7 +23,8 @@ func _enter_running():
 	pass
 
 func _process_running():
-	change_speed(10.02 * get_physics_process_delta_time(), Globals.DeltaType.ABSOLUTE)
+	change_speed(10 * get_physics_process_delta_time(), Globals.DeltaType.ABSOLUTE)
+	change_speed(1.02, Globals.DeltaType.RELATIVE)
 	var dir = directional_input.get_input_direction()
 	move_and_slide(Vector2(dir.x * 400, 0))
 
