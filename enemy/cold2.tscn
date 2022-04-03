@@ -20,7 +20,7 @@ collision_layer = 0
 collision_mask = 2
 monitorable = false
 script = ExtResource( 1 )
-speed_delta = -50
+speed_delta = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.15, 0.15 )

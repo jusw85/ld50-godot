@@ -23,10 +23,14 @@ func _enter_running():
 	pass
 
 func _process_running():
+	change_speed(1 * get_physics_process_delta_time(), Globals.DeltaType.ABSOLUTE)
 	var dir = directional_input.get_input_direction()
-	move_and_slide(Vector2(dir.x * speed, 0))
+	move_and_slide(Vector2(dir.x * 300, 0))
 
-func change_speed(delta):
-	speed += delta
-	speed = clamp(speed, 100, 500)
-	animated_sprite.speed_scale = (((speed - 100.0) / 500.0) * (1.5 - 0.5)) + 0.5
+func change_speed(delta, typ):
+	if typ == Globals.DeltaType.ABSOLUTE:
+		speed += delta
+	elif typ == Globals.DeltaType.RELATIVE:
+		speed *= delta
+	speed = clamp(speed, 10, 1000)
+	animated_sprite.speed_scale = (((speed - 10.0) / 1000.0) * (1.5 - 0.5)) + 0.5

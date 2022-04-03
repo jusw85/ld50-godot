@@ -1,6 +1,6 @@
 extends Area2D
 
-export var speed_delta = 50
+export var speed_delta = 1.0
 var player
 
 func _ready():
@@ -17,7 +17,7 @@ func _process(_delta) -> void:
 
 
 func _on_body_entered(body):
-	body.change_speed(speed_delta)
+	body.change_speed(speed_delta, Globals.DeltaType.RELATIVE)
 	queue_free()
 
 
