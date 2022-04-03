@@ -23,6 +23,5 @@ func _spawn():
 	add_child(spawn)
 
 
-
 func _on_Timer_timeout():
 	_spawn()

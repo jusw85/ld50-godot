@@ -25,7 +25,7 @@ script = ExtResource( 2 )
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 156, 520 )
 z_index = 1
-speed = 10.0
+speed = 900.0
 
 [node name="Spawner" type="Area2D" parent="YSort"]
 position = Vector2( 189, -366 )
