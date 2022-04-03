@@ -6,7 +6,7 @@ var rows := []
 var player
 
 func _ready():
-	var y = 0;
+	var y = -64;
 	while y < get_viewport().size.y:
 		var obj = row.instance()
 		obj.position.y = y

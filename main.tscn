@@ -7,7 +7,7 @@
 [ext_resource path="res://background/background.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 120, 80 )
+extents = Vector2( 141.5, 80 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 32 )
@@ -27,7 +27,7 @@ position = Vector2( 156, 520 )
 z_index = 1
 
 [node name="Spawner" type="Area2D" parent="YSort"]
-position = Vector2( 162, -377 )
+position = Vector2( 189, -366 )
 monitoring = false
 monitorable = false
 script = ExtResource( 5 )
