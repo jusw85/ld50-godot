@@ -19,3 +19,7 @@ func _process(_delta) -> void:
 func _on_body_entered(body):
 	body.change_speed(speed_delta)
 	queue_free()
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()
