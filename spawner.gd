@@ -4,7 +4,7 @@ extends Area2D
 var _extents
 
 var _enemies = [preload("res://enemy/cold.tscn"),
-				preload("res://enemy/cold.tscn"),
+				preload("res://enemy/cold2.tscn"),
 				preload("res://enemy/hot.tscn")]
 
 
