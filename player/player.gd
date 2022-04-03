@@ -2,7 +2,7 @@
 
 extends KinematicBody2D
 
-enum State { RUNNING, END }
+enum State { RUNNING, END, END2 }
 
 export var speed := 100.0
 
@@ -29,11 +29,17 @@ func _process_running():
 	move_and_slide(Vector2(dir.x * 400, 0))
 
 func _enter_end():
-	$Tween.interpolate_property(self, "speed", speed, 200, 5.0, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	$Tween.interpolate_property(self, "speed", speed, 200, 4.0, Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	$Tween.start()
 
 func _process_end():
 	pass
+
+func _enter_end2():
+	pass
+
+func _process_end2():
+	move_and_slide(Vector2(0, -speed))
 
 func change_speed(delta, typ):
 	if _fsm.state == State.END:
@@ -48,3 +54,6 @@ func change_speed(delta, typ):
 
 func gameover():
 	_fsm.change_state(State.END)
+
+func _on_Background_done():
+	_fsm.change_state(State.END2)
