@@ -25,7 +25,6 @@ script = ExtResource( 2 )
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 156, 520 )
 z_index = 1
-speed = 900.0
 
 [node name="AnimatedSprite" parent="YSort/Player" index="1"]
 frame = 5
