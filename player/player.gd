@@ -41,7 +41,10 @@ func _enter_end2():
 func _process_end2():
 	move_and_slide(Vector2(0, -speed))
 	if position.y < -30:
-		get_tree().change_scene("res://splash/end.tscn")
+		if (randi() % 2) > 0:
+			get_tree().change_scene("res://splash/end.tscn")
+		else:
+			get_tree().change_scene("res://splash/endb.tscn")
 
 func change_speed(delta, typ):
 	if _fsm.state == State.END:
