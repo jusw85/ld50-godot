@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="ld50-godot"
-run/main_scene="res://main.tscn"
+run/main_scene="res://start.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -105,4 +105,5 @@ quality/driver/driver_name="GLES2"
 2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"
