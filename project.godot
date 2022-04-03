@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="ld50-godot"
-run/main_scene="res://start.tscn"
+run/main_scene="res://splash/start.tscn"
 config/icon="res://icon.png"
 
 [autoload]

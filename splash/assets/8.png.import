@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/8.png-6b32e3271be7a57a65220cb3c80ff678.stex"
+path="res://.import/8.png-dbff7e060006a5f492da816f0da43b73.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gameover/8.png"
-dest_files=[ "res://.import/8.png-6b32e3271be7a57a65220cb3c80ff678.stex" ]
+source_file="res://splash/assets/8.png"
+dest_files=[ "res://.import/8.png-dbff7e060006a5f492da816f0da43b73.stex" ]
 
 [params]
 
