@@ -4,7 +4,7 @@ extends KinematicBody2D
 
 enum State { RUNNING, }
 
-export var speed := 300.0
+export var speed := 100.0
 
 var _fsm: NC.StateMachine
 
@@ -25,7 +25,7 @@ func _enter_running():
 func _process_running():
 	change_speed(1 * get_physics_process_delta_time(), Globals.DeltaType.ABSOLUTE)
 	var dir = directional_input.get_input_direction()
-	move_and_slide(Vector2(dir.x * 300, 0))
+	move_and_slide(Vector2(dir.x * 400, 0))
 
 func change_speed(delta, typ):
 	if typ == Globals.DeltaType.ABSOLUTE:
